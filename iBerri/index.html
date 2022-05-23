@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/f66720fad7.js" crossorigin="anonymous"></script>
+
+        <!-- STYLESHEET  -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>iBerri</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>iBerri</h1>
+
+        </div>
+        <div id="body">
+            <div id="form">
+                <form action="https://formspree.io/f/******" method="POST">
+                    <div>
+                        <h2></h2>
+                    </div>
+
+                    <label for="name">Full Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" required>
+                    <br> <br>
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="date" name="date" id="date" readonly>
+                    <br> <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" required>
+                    <br> <br>
+                    <label for="project">Project</label>
+                    <br>
+                    <input type="text" name="project" required>
+                    <br> <br>
+                    <label for="rep">Repository</label>
+                    <br>
+                    <input type="text" name="rep" required>
+                    <br>
+                    <button class="submit" type="submit"><span>Submit</span>
+                        <div id="target"></div>
+                    </button>
+                </form>
+            </div>
+            <div id="side">
+                <div>
+                    <h1>iBerri</h1>
+                    <hr>
+                    <span id="values"></span>
+                </div>
+                <div id="footer">
+                    <div id="colorChoice">
+                        <button><i onclick="redMode()" class="fa-solid fa-circle"></i></button>
+                        <button><i onclick="yellowMode()" class="fa-solid fa-circle"></i></button>
+                        <button> <i onclick="greenMode()" class="fa-solid fa-circle"></i></button>
+                        <button type="button" onclick="dayMode()" i class="fa-solid fa-sun" id="dayMode"></i></button>
+                    </div>
+
+                    <!-- <button type="button" onclick="darkMode()" i class="fa-solid fa-sun"></i></button> -->
+                </div>
+            </div>
+
+        </div>
+        <div id="us">
+            <h1>Check us Out:</h1>
+            <div>
+                <a href="https://github.com/dmtastudios"><i class="fa-solid fa-dragon"></i><br>David Williams</a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
